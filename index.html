@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Interactive Playground</h1>
+        <p>Explore event handling, interactive elements, and form validation</p>
+    </header>
+
+    <main>
+        <!-- Section 1: Event Handling -->
+        <section id="event-handling" class="card">
+            <h2>🎈 Event Handling</h2>
+            
+            <div class="event-demo">
+                <h3>Button Click</h3>
+                <button id="click-btn" class="btn">Click Me!</button>
+                <p id="click-output">Click the button to see what happens...</p>
+            </div>
+
+            <div class="event-demo">
+                <h3>Hover Effects</h3>
+                <div id="hover-box">Hover over me</div>
+                <p id="hover-output">Mouse interactions will be tracked here</p>
+            </div>
+
+            <div class="event-demo">
+                <h3>Keypress Detection</h3>
+                <input type="text" id="key-input" placeholder="Type something here...">
+                <p id="key-output">Press any key to see it detected</p>
+            </div>
+
+            <div class="event-demo">
+                <h3>Secret Action (Double-click)</h3>
+                <div id="secret-box">Double-click to reveal a secret</div>
+                <p id="secret-output"></p>
+            </div>
+        </section>
+
+        <!-- Section 2: Interactive Elements -->
+        <section id="interactive-elements" class="card">
+            <h2>🎮 Interactive Elements</h2>
+            
+            <div class="interactive-demo">
+                <h3>Color Changing Button</h3>
+                <button id="color-btn" class="btn">Change My Color</button>
+            </div>
+
+            <div class="interactive-demo">
+                <h3>Image Gallery</h3>
+                <div class="gallery">
+                    <div class="gallery-nav">
+                        <button id="prev-btn" class="btn">Previous</button>
+                        <button id="next-btn" class="btn">Next</button>
+                    </div>
+                    <div class="gallery-container">
+                        <img id="gallery-img" src="https://images.pexels.com/photos/30601566/pexels-photo-30601566/free-photo-of-silhouette-of-palm-trees-at-twilight.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Gallery Image">
+                    </div>
+                    <p id="image-caption">Image 1 of 5</p>
+                </div>
+            </div>
+
+            <div class="interactive-demo">
+                <h3>Content Tabs</h3>
+                <div class="tabs">
+                    <div class="tab-btns">
+                        <button class="tab-btn active" data-tab="1">Tab 1</button>
+                        <button class="tab-btn" data-tab="2">Tab 2</button>
+                        <button class="tab-btn" data-tab="3">Tab 3</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <h4>Tab 1 Content</h4>
+                            <p>This is the content for Tab 1. It's all about JavaScript events!</p>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <h4>Tab 2 Content</h4>
+                            <p>Welcome to Tab 2. Here we discuss interactive elements.</p>
+                        </div>
+                        <div class="tab-pane" id="tab3">
+                            <h4>Tab 3 Content</h4>
+                            <p>And finally, Tab 3 - all about form validation and user experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-demo">
+                <h3>Animated Counter (Bonus)</h3>
+                <div class="counter-container">
+                    <button id="counter-decrease" class="btn">-</button>
+                    <span id="counter-value">0</span>
+                    <button id="counter-increase" class="btn">+</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Form Validation -->
+        <section id="form-validation" class="card">
+            <h2>📋 Form Validation</h2>
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="username">Username (required)</label>
+                    <input type="text" id="username" name="username" required>
+                    <div class="validation-feedback"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="validation-feedback"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="validation-feedback"></div>
+                    <div class="password-requirements">
+                        <p>Password must contain:</p>
+                        <ul>
+                            <li id="length-check">At least 8 characters</li>
+                            <li id="uppercase-check">At least 1 uppercase letter</li>
+                            <li id="number-check">At least 1 number</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <div class="validation-feedback"></div>
+                </div>
+
+                <button type="submit" class="btn submit-btn">Submit Form</button>
+            </form>
+            <div id="form-result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for JavaScript Event Handling & Interactive Elements Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -80,11 +80,11 @@ secretOutput.textContent = '🎁 You found the secret! Here is a random number: 
     // In a real project, these would be actual image URLs
     // For this assignment, we'll use placeholder images with different sizes
     const images = [
-        { src: 'https://images.pexels.com/photos/30601566/pexels-photo-30601566/free-photo-of-silhouette-of-palm-trees-at-twilight.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', caption: 'Image 1 of 5: Nature Scene' },
-        { src: 'https://images.pexels.com/photos/31851616/pexels-photo-31851616/free-photo-of-vast-altiplano-landscape-with-snow-capped-mountains.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', caption: 'Image 2 of 5: Urban Landscape' },
-        { src: 'https://images.pexels.com/photos/31837999/pexels-photo-31837999/free-photo-of-stunning-monument-valley-buttes-under-clear-sky.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', caption: 'Image 3 of 5: Beach Sunset' },
-        { src: 'https://images.pexels.com/photos/31840057/pexels-photo-31840057/free-photo-of-misty-forest-road-in-ocypel-poland.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', caption: 'Image 4 of 5: Mountain View' },
-        { src: 'https://images.pexels.com/photos/31469968/pexels-photo-31469968/free-photo-of-majestic-alpine-ibex-in-stunning-mountain-landscape.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', caption: 'Image 5 of 5: Forest Path' }
+        { src: 'https://images.pexels.com/photos/30601566/pexels-photo-30601566/free-photo-of-silhouette-of-palm-trees-at-twilight.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', caption: 'Image 1 of 5' },
+        { src: 'https://images.pexels.com/photos/31851616/pexels-photo-31851616/free-photo-of-vast-altiplano-landscape-with-snow-capped-mountains.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', caption: 'Image 2 of 5' },
+        { src: 'https://images.pexels.com/photos/31837999/pexels-photo-31837999/free-photo-of-stunning-monument-valley-buttes-under-clear-sky.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', caption: 'Image 3 of 5' },
+        { src: 'https://images.pexels.com/photos/31840057/pexels-photo-31840057/free-photo-of-misty-forest-road-in-ocypel-poland.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', caption: 'Image 4 of 5' },
+        { src: 'https://images.pexels.com/photos/31469968/pexels-photo-31469968/free-photo-of-majestic-alpine-ibex-in-stunning-mountain-landscape.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', caption: 'Image 5 of 5' }
     ];
     
     let currentImageIndex = 0;
